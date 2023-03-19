@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: white;
+    background: #373b40;
+    letter-spacing: 0;
+}
+.container{
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.header{
+    position: fixed;
+    padding: 0 0 0 50px;
+    left: 50px;
+    right: 50px;
+    top: 40px;
+    height: 80px;
+    z-index: 100;
+    background: #585d65;
+    border-radius: 80px;
+    transition: all .7s cubic-bezier(0.165, 0.85, 0.45, 1);
+    -webkit-transition: all .7s cubic-bezier(0.165, 0.85, 0.45, 1);
+}
+.header .flex-div #header-text{
+    font-size: 1.3rem;
+}
+#flex-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-item{
+    display: flex;
+    list-style: none;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.menu-item li{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.menu-item li:first-child{
+    margin-left: 0;
+}
+.menu-item li a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    line-height: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 50px;
+    font-size: 15px;
+    cursor: pointer;
+
+    transition: all .7s cubic-bezier(0.165, 0.85, 0.45, 1);
+    -webkit-transition: all .7s cubic-bezier(0.165, 0.85, 0.45, 1);
+}
+
+
+/* Done with the header style */
+
+/* Wrapper  Style*/
+.wrapper{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 45%;
+    margin-right: 92px;
+}
+
+/* background style */
+.bg-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45%;
+}
+
+.bg-filter-stick-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #68e0cf;
+    
+}
+
+.bg-img{
+    background-image: url(/kubernetes-task/images/pexels-polina-tankilevitch-4723518.jpeg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-filter-stick-left .bg-img{
+    mix-blend-mode: luminosity;
+    filter: grayscale(100%);
+}
+
+/* Background done */
+
+/* Section style */
+
+
+.section-intro{
+    position: relative;
+    z-index: 11;
+    overflow: visible;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #585d65;
+
+}
+.centrize{
+    display: table !important;
+    table-layout: fixed !important;
+    height: 100% !important;
+    position: relative !important;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+}
+.full-width{
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.vertical-center{
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+.section-intro .h-title{
+    margin: 40px 0 0 11vw;
+    padding: 4.2vw;
+    font-size: 4.2vw;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 264px;
+}
+
+.section-intro .started-content{
+    padding-left: 8%;
+    max-width: 100%;
+}
+
+.section-intro .started-content .s-subtitle{
+    margin: 0 0 30px 0;
+    height: 18px;
+}
+.sub-text{
+    color: #68e0cf;
+    line-height: 1.2;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.section-intro .started-content .little-description{
+    margin: 0 0 30px 0;
+    font-size: 14px;
+    color: #fff;
+}
+.section-intro .contact-btn{
+ margin-right: 15px;
+ padding: 0 35px;
+ position: relative;
+ overflow: hidden;
+ display: inline-block;
+ vertical-align: middle;
+ height: 64;
+ line-height: 64px;
+ text-align: center;
+ font-size: 12px;
+ color: #fff;
+ font-weight: 800;
+ text-decoration: none;
+ text-transform: uppercase;
+ background: transparent;
+ border-bottom: 1px solid #585d65;
+ cursor: pointer;
+ border-radius: 64px;
+ transition: all .7s cubic-bezier(0.165, 0.85, 0.45, 1);
+ -webkit-transition: all .7s cubic-bezier(0.165, 0.85, 0.45, 1);
+}

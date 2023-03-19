@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres
+spec:
+  selector:
+    matchLabels:
+      app: web-app-portfolio
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: web-app-portfolio
+    spec:
+      containers:
+      - name: postgres
+        image: postgres
+        envFrom:
+        - configMapRef:
+            name: postgres-env
+        ports:
+        - name: postgres
+          containerPort: 5432
